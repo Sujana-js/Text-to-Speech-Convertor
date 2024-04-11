@@ -1,0 +1,8 @@
+from gtts import gTTS
+import os
+txt='think champ'
+language='en'
+output=gTTS(text=txt,lang=language,slow=False)
+output.save("output.mp3")
+os.system("start output.mp3")
+
